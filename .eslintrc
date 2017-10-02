@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true,
+    "mocha": true,
+    "node": true,
+  },
+  "rules": {
+    "array-callback-return": ["off"],
+    "arrow-body-style": ["error", "always"],
+    "arrow-parens": ["off"],
+    "class-methods-use-this": 0,
+    "compat/compat": 2,
+    "consistent-return": "off",
+    "comma-dangle": "off",
+    "flowtype-errors/show-errors": 2,
+    "generator-star-spacing": "off",
+    "import/no-unresolved": ["error", { "ignore": ["electron"] }],
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/no-static-element-interactions": 0,
+    "max-len": ["off"],
+    "no-console": 1,
+    "no-underscore-dangle": "off",
+    "no-unused-vars": ["error", { "args": "none" }],
+    "no-use-before-define": "off",
+    "promise/param-names": 2,
+    "promise/always-return": 2,
+    "promise/catch-or-return": 2,
+    "promise/no-native": 0,
+    "react/jsx-no-bind": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "react/no-find-dom-node": "off",
+    "react/prefer-stateless-function": "off",
+    "spaced-comment": ["error", "always", { "exceptions": ["*"] }]
+  },
+  "plugins": [
+    "compat",
+    "flowtype",
+    "flowtype-errors",
+    "import",
+    "promise",
+    "react"
+  ]
+}
